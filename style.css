@@ -28,7 +28,7 @@
 }
 
 :root {
-    --main-text-color: #FF5351;
+    --main-text-color: #004D40;
     --logo-transtion: all ease 250ms;
     --under-line-transtion: all ease 500ms;
 }
@@ -198,7 +198,7 @@ header i {
 
 section {
     background-color: #fff;
-    box-shadow: 0 0 10px #ff00c8;
+    box-shadow: 0 0 16px var(--main-text-color);
     border-radius: 12px;
     opacity: 0;
     transform: translateX(510px);
