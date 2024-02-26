@@ -50,8 +50,6 @@ body {
 header {
     height: 100vh;
     width: 100%;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(93deg, rgba(0, 0, 0, 1) 0%, rgba(47, 47, 54, 1) 100%);
 }
 
 header i {
@@ -128,27 +126,30 @@ header i {
 .nav-list>li>a.list-item-link:hover::after {
     transform: scale(1);
 }
-/* sss */
-.site-detail{
+
+.site-detail {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.logo_box{
+
+.logo_box {
     width: 50px;
     height: 50px;
 }
-.site-logo{
+
+.site-logo {
     width: 100%;
     height: 100%;
 }
+
 .header-main-box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 3rem;
-    margin-top: 13rem;
+    margin-top: 7rem;
     color: var(--main-text-color);
 }
 
@@ -249,6 +250,11 @@ section.show {
 }
 
 /* responsiv codes */
+@media screen and (max-width:933px) {
+    .feature_box{
+        grid-template-columns: repeat(1, 400px);
+    }
+}
 @media screen and (max-width:770px) {
     .project-name {
         font-size: 60px;
@@ -371,6 +377,11 @@ section.show {
 
     .contact-us-div>div {
         font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:416Px) {
+    .feature_box{
+        grid-template-columns: repeat(1, 300px);
     }
 }
 
