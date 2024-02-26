@@ -251,10 +251,11 @@ section.show {
 
 /* responsiv codes */
 @media screen and (max-width:933px) {
-    .feature_box{
+    .feature_box {
         grid-template-columns: repeat(1, 400px);
     }
 }
+
 @media screen and (max-width:770px) {
     .project-name {
         font-size: 60px;
@@ -379,8 +380,9 @@ section.show {
         font-size: 0.8rem;
     }
 }
+
 @media screen and (max-width:416Px) {
-    .feature_box{
+    .feature_box {
         grid-template-columns: repeat(1, 300px);
     }
 }
