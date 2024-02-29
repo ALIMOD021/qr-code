@@ -186,6 +186,7 @@ header i {
 
 .feature-section {
     display: flex;
+    margin-bottom: 3rem;
 }
 
 .feature_box {
@@ -196,7 +197,7 @@ header i {
     gap: 5rem;
 }
 
-section {
+.first-feature {
     background-color: #fff;
     box-shadow: 0 0 16px var(--main-text-color);
     border-radius: 12px;
@@ -249,10 +250,86 @@ section.show {
     height: 100%;
 }
 
+/* footer design codes */
+
+footer {
+    box-shadow: 0 0 16px var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    gap: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.footer-section,
+.project-detail-box {
+    flex-direction: row-reverse;
+}
+
+.footer-section {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project-detail-box {
+    gap: 2rem;
+}
+
+.project-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.project-Builders-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    font-size: 22px;
+}
+
+.footer-copy-right {
+    width: 100%;
+    text-align: center;
+    border-top: #004D40 solid 1px;
+}
+
+.copy-right-text {
+    margin-top: 2rem;
+    font-size: 22px;
+}
+
 /* responsiv codes */
 @media screen and (max-width:933px) {
     .feature_box {
         grid-template-columns: repeat(1, 400px);
+    }
+}
+
+@media screen and (max-width:864px) {
+
+    .copy-right-text,
+    .project-Builders-box {
+        font-size: 18px;
+    }
+
+    .project-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .project-detail-box {
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 4rem 2rem;
     }
 }
 
@@ -271,6 +348,16 @@ section.show {
 
     .site-name {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:656px) {
+    .footer-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    footer{
+        padding: 1rem;
     }
 }
 
@@ -384,6 +471,15 @@ section.show {
 @media screen and (max-width:416Px) {
     .feature_box {
         grid-template-columns: repeat(1, 300px);
+    }
+    .copy-right-text,
+    .project-Builders-box {
+        font-size: 14px;
+    }
+
+    .project-logo {
+        width: 50px;
+        height: 50px;
     }
 }
 

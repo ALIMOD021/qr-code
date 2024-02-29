@@ -2,7 +2,7 @@
 let text1 = 'Where code'; // The text to be animated for the first p tag
 let text2 = 'جشنواره برنامه نویسی مدرسه موفقیان'; // The text to be animated for the second p tag
 let text3 = 'Made By : [A.Farajpoor] ,[M.Aslani]'; // The text to be animated for the third p tag
-let speed = 100; // Speed/delay of the effect in milliseconds
+let speed = 80; // Speed/delay of the effect in milliseconds
 
 function typeWriter(text, id, delay) {
   let i = 0;
