@@ -1,0 +1,512 @@
+@font-face {
+    font-family: "Vazir";
+    src: url(Fonts/Vazir-font/Vazirmatn-Medium.ttf);
+}
+
+@font-face {
+    font-family: "qrcode";
+    src: url(Fonts/qr-code/AglrySpace-xpV0.ttf);
+}
+
+@font-face {
+    font-family: 'barcode';
+    src: url(Fonts/barcode/Idautomationhc39m-raq9.ttf);
+}
+
+@font-face {
+    font-family: 'project';
+    src: url(Fonts/projectfont/ProjectOfCode-X3nKP.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+
+}
+
+:root {
+    --main-text-color: #004D40;
+    --logo-transtion: all ease 250ms;
+    --under-line-transtion: all ease 500ms;
+}
+
+/* body codes */
+body {
+    font-family: "Vazir";
+    background: rgb(0, 0, 0);
+    background: linear-gradient(93deg, rgba(0, 0, 0, 1) 0%, rgba(47, 47, 54, 1) 100%);
+}
+
+/* container codes */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* header codes */
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+header i {
+    color: var(--main-text-color);
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-detail {
+    padding: 1rem;
+    background-color: #000000;
+}
+
+.contact-us-div {
+    gap: 2rem;
+}
+
+.contact-us-div div {
+    gap: 0.5rem;
+    user-select: none;
+}
+
+.social-media-div {
+    gap: 1rem;
+}
+
+.social-media-div>a {
+    font-size: 22px;
+    transition: var(--logo-transtion);
+}
+
+.social-media-div>a:hover {
+    transform: translateY(-10px);
+}
+
+.header-nav-bar {
+    padding: 1rem;
+    background-color: #181921;
+}
+
+.site-name {
+    font-family: 'project';
+    letter-spacing: 10px;
+}
+
+.nav-list {
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-list>li>a.list-item-link {
+    color: white;
+}
+
+.nav-list>li>a.list-item-link {
+    position: relative;
+}
+
+.nav-list>li>a.list-item-link::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: var(--main-text-color) 1px solid;
+    transform: scale(0);
+    transition: var(--under-line-transtion);
+    margin-top: 5px;
+}
+
+.nav-list>li>a.list-item-link:hover::after {
+    transform: scale(1);
+}
+
+.site-detail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo_box {
+    width: 50px;
+    height: 50px;
+}
+
+.site-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.header-main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 7rem;
+    color: var(--main-text-color);
+}
+
+.project-name {
+    font-size: 72px;
+    font-family: 'barcode';
+}
+
+.project-solgan {
+    font-size: 48px;
+}
+
+.project-made-by {
+    font-size: 32px;
+}
+
+/* mobile nav list codes */
+.line {
+    width: 20px;
+    background-color: var(--main-text-color);
+    height: 3px;
+    margin-bottom: 3px;
+    display: block;
+    border-radius: 20px;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.header-nav-list-mobile>li>a {
+    color: var(--main-text-color);
+}
+
+.feature-section {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.feature_box {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 5rem auto;
+    gap: 5rem;
+}
+
+.first-feature {
+    background-color: #fff;
+    box-shadow: 0 0 16px var(--main-text-color);
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateX(510px);
+    transition: all 1s ease-in-out;
+}
+
+.feature-title-item,
+.feature-text {
+    color: #181921;
+    user-select: none;
+    text-align: center;
+}
+
+.feature-text {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.first-feature {
+    position: relative;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-logo-box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.feature-logo_section {
+    position: absolute;
+    top: -60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.feature-logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* footer design codes */
+
+footer {
+    box-shadow: 0 0 16px var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    gap: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.footer-section,
+.project-detail-box {
+    flex-direction: row-reverse;
+}
+
+.footer-section {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project-detail-box {
+    gap: 2rem;
+}
+
+.project-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.project-Builders-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    font-size: 22px;
+}
+
+.footer-copy-right {
+    width: 100%;
+    text-align: center;
+    border-top: #004D40 solid 1px;
+}
+
+.copy-right-text {
+    margin-top: 2rem;
+    font-size: 22px;
+}
+
+/* responsiv codes */
+@media screen and (max-width:933px) {
+    .feature_box {
+        grid-template-columns: repeat(1, 400px);
+    }
+}
+
+@media screen and (max-width:864px) {
+
+    .copy-right-text,
+    .project-Builders-box {
+        font-size: 18px;
+    }
+
+    .project-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .project-detail-box {
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .project-name {
+        font-size: 60px;
+    }
+
+    .project-solgan {
+        font-size: 36px;
+    }
+
+    .project-made-by {
+        font-size: 36px;
+    }
+
+    .site-name {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:656px) {
+    .footer-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .project-name {
+        font-size: 50px;
+    }
+
+    .project-solgan {
+        font-size: 26px;
+    }
+
+    .project-made-by {
+        font-size: 26px;
+    }
+
+    .site-name {
+        font-size: 1rem;
+    }
+
+    .nav-list>li {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:546px) {
+    .header-nav-list {
+        display: none;
+    }
+
+    #toggle_nav:checked+.header-nav-list-mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+        text-align: center;
+        transition: all 500ms ease;
+        transform: translateX(0);
+
+    }
+
+    .header-nav-list-mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+        text-align: center;
+        transform: translateX(510px);
+        transition: all 500ms ease;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .future-div {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:504px) {
+    .project-name {
+        font-size: 40px;
+    }
+
+    .project-solgan {
+        font-size: 26px;
+    }
+
+    .project-made-by {
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (max-width:443px) {
+    .project-name {
+        font-size: 35px;
+    }
+
+    .project-solgan {
+        font-size: 21px;
+    }
+
+    .project-made-by {
+        font-size: 21px;
+    }
+
+    .social-media-div>a {
+        font-size: 1.2rem;
+    }
+
+    .contact-us-div>div {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:416Px) {
+    .feature_box {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    .copy-right-text,
+    .project-Builders-box {
+        font-size: 14px;
+    }
+
+    .project-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:382px) {
+    .header-detail>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:369px) {
+    .project-name {
+        font-size: 30px;
+    }
+
+    .project-solgan {
+        font-size: 15px;
+    }
+
+    .project-made-by {
+        font-size: 15px;
+    }
+
+}
